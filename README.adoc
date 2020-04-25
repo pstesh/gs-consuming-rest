@@ -1,3 +1,19 @@
+Issues faced: I had to create gs-consuming-rest in the git first
+
+Then, I was not able to push the repository
+
+This is what I did
+
+1) Generated a new SSH key using the instructions inside Mac
+2) It created one Public Key and one private key
+3) Added public key inside my account
+3) Added private key inside my mac "ssh-add -K N".  Here N was the directory name containing the private key(little strange for file name, but fine)
+4) Then I changed directory to gs-consuming-rest directory root
+5) Issued following command git remote add origin https://github.com/pstesh/gs-consuming-rest.git
+6) Then git push --set-upstream origin master
+
+Will follow same commands in the next excercise to make sure everything looks good again. Keys need not be added because it is already added.
+
 :spring_boot_version: 2.2.2.RELEASE
 :RestTemplate: http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html
 :HttpMessageConverter: http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/http/converter/HttpMessageConverter.html
